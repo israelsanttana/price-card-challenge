@@ -1,2 +1,2 @@
-# value-card-challenge
+# price-card-challenge
 Single price grid component challenge
