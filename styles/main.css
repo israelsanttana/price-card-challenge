@@ -104,3 +104,25 @@ p {
   color: var(--third-party-color);
   line-height: 1.4;
 }
+
+@media (max-width: 550px) {
+  .show-case {
+    width: 300px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .section-primary,
+  .section-secondary,
+  .section-third {
+    width: 300px;
+    height: 266px;
+  }
+  .section-secondary {
+    align-items: center;
+  }
+}
