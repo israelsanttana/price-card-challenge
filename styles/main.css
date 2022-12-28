@@ -28,6 +28,8 @@ html {
   box-shadow: rgba(37, 37, 37, 0.2) 0px 8px 24px;
 }
 
+/* -- section 1 -- */
+
 .section-primary {
   width: 100%;
   grid-column: span 2;
@@ -46,6 +48,8 @@ html {
 .section-primary p {
   color: var(--quatrain-color);
 }
+
+/* -- section 2 -- */
 
 .section-secondary {
   background-color: var(--primary-color);
@@ -96,6 +100,8 @@ p {
   opacity: 0.8;
 }
 
+/* -- section 3 -- */
+
 .section-third h3 {
   color: #fff;
 }
@@ -104,6 +110,8 @@ p {
   color: var(--third-party-color);
   line-height: 1.4;
 }
+
+/* -- responsive -- */
 
 @media (max-width: 550px) {
   .show-case {
@@ -120,7 +128,7 @@ p {
   .section-secondary,
   .section-third {
     width: 300px;
-    height: 266px;
+    height: 260px;
   }
   .section-secondary {
     align-items: center;
