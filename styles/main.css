@@ -139,8 +139,9 @@ p {
   .section-primary,
   .section-secondary,
   .section-third {
-    width: 80%;
+    width: 90%;
     height: auto;
+    padding: 2rem;
   }
   .section-secondary {
     align-items: center;
