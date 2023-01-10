@@ -7,10 +7,12 @@
 
 html {
   font-family: karla;
+  font-size: 62.5%;
 }
 
 body {
   margin: 0;
+  font-size: 1.6rem;
 }
 
 .container {
@@ -23,10 +25,12 @@ body {
 }
 
 .show-case {
-  width: 640px;
+  width: 100%;
+  max-width: 680px;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 240px 1fr;
+  grid-template-rows: 230px 1fr;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: rgba(37, 37, 37, 0.2) 0px 8px 24px;
@@ -38,10 +42,10 @@ body {
   width: 100%;
   grid-column: span 2;
   background-color: #fff;
-  padding: 40px;
+  padding: 4rem;
 }
 
-.section-primary h2 {
+.section-primary h1 {
   color: var(--primary-color);
 }
 
@@ -60,7 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px;
+  padding: 4rem;
 }
 
 .section-secondary h3,
@@ -69,7 +73,7 @@ p {
 }
 
 .value {
-  font-size: 44px;
+  font-size: 4.4rem;
   font-weight: 600;
 }
 
@@ -86,7 +90,7 @@ p {
   border: none;
   border-radius: 6px;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   box-shadow: rgba(37, 37, 37, 0.2) 0px 8px 24px;
 }
 
@@ -100,7 +104,7 @@ p {
 
 .section-third {
   background-color: var(--primary-color);
-  padding: 40px;
+  padding: 4rem;
   opacity: 0.8;
 }
 
@@ -118,21 +122,24 @@ p {
 /* -- responsive -- */
 
 @media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
   .show-case {
-    width: 300px;
-    height: 800px;
+    width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    overflow: hidden;
   }
 
   .section-primary,
   .section-secondary,
   .section-third {
-    width: 300px;
-    height: 266px;
+    width: 80%;
+    height: auto;
   }
   .section-secondary {
     align-items: center;
